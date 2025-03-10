@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6dd3ce;
+}
+
+.container {
+    width: 400px;
+    background-color: white;
+    padding: 28px;
+    border-radius: 9px;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-box input {
+    width: 80%;
+    padding: 10px 15px;
+    background-color: #e6f5fb;
+    border-radius: 10px;
+}
+
+.search-box input::placeholder {
+    color: #000;
+    font-size: 16px;
+}
+
+.search-box button {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #e6f5fb;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: black;
+}
+
+.weather-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.weather-body img {
+    width: 60%;
+}
+
+.weather-info {
+    margin-block: 20px;
+}
+
+.weather-info .temp {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.weather-info .temp sup {
+    font-size: 15px;
+}
+
+.weather-info .description {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity,
+.Wind-Speed {
+    display: flex;
+    align-items: center;
+}
+
+.humidity {
+    margin-left: 16px;
+}
+
+.Wind-Speed {
+    margin-right: 16px;
+}
+
+.weather-details i {
+    font-size: 24px;
+
+}
+
+.weather-details .text {
+    margin-left: 10px;
+    font-size: 19px;
+}
+
+.error-msg {
+    margin-top: 10px;
+    display: flex;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-msg img {
+    width: 80%;
+}
+
+@media (max-width:700px){
+    .container{
+        width:90%;
+    }
+}
